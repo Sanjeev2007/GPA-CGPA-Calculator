@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>GPA Calculator and Predictor</title>
 </head>
 <body>
+    <!--icon--><i class="fa-solid fa-graduation-cap"></i>
+    <div class = "page-header">
+        <h1>SVCE GPA/CGPA Predictor</h1>
+    </div>
+    <div class="top">
+        <div class = "subject-gpa-calculator">
+        <h3>Subject GPA Calculator</h3>
+
+        <p id = "internal-avg">Average Internal Score (out of 50)</p>
+        <input type="text" placeholder="Enter Score">
+        
+        <p id = "external-avg">End Semester Exam Score (out of 100) <input type="text" placeholder="Enter Score">
+        </p>
+        
+        <p id="subject-credits">Subject Credits: <input type="text" placeholder="Enter Credits"></p>
+
+        <button id="gpa-calculate">Calculate</button>
+        <br>
+        <br>
+        <span class="grade-point">Grade Point (GPA)</span>
+
+        <h3 class = "gpa-score">Grade Point:</h3>
+
+        <span class="letter-grade">Letter Grade:</span>
+
+        </div>
+
+        <div class="goal-predictor">
+            <h3>Goal Predictor</h3>
+            <!--Line-->
+            
+            <p>My Average Internl Score is:</p>
+            <input type="text" placeholder="Enter Score">
+            
+            <p>I want a Target GPA of </p>
+            <input type="text" placeholder="Enter Score">
+            <br>
+            <br>
+
+            <button>Predict</button>
+
+            <h5>Minimum ESE Score Needed:</h5>
+            <p class="external-predicted"></p>
+        </div>
+    </div>
+
     
 </body>
 </html>
